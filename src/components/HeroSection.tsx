@@ -1,5 +1,6 @@
 import { ArrowRight, Mail } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+
+const profileImg = "https://i.postimg.cc/Zn3DqhzS/IMG-20260106-WA0007.jpg";
 
 const HeroSection = () => (
   <section id="home" className="min-h-screen flex items-center pt-16">
