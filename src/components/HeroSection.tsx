@@ -6,7 +6,7 @@ const HeroSection = () => (
     <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
       <div className="animate-fade-up">
         <p className="text-primary font-medium mb-2">Hi, I'm</p>
-        <h1 className="font-heading text-4xl md:text-6xl font-bold mb-2">
+        <h1 className="font-heading text-4xl md:text-6xl font-bold mb-2 text-foreground">
           Abinaya{" "}
           <span className="gradient-text">Sathiyaseelan</span>
         </h1>
