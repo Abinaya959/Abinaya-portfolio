@@ -1,8 +1,34 @@
 import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.name || !form.email || !form.message) {
+      toast.error("Please fill in all fields");
+      return;
+    }
+    setSending(true);
+    try {
+      await emailjs.send(
+        "service_lt802kf",
+        "template_esm2qhr",
+        { from_name: form.name, from_email: form.email, message: form.message },
+        "G9Udl8ADP-8ALnT8q"
+      );
+      toast.success("Message sent successfully!");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setSending(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20">
@@ -34,7 +60,7 @@ const ContactSection = () => {
               </div>
             ))}
           </div>
-          <form className="card-glass p-6 space-y-4" onSubmit={(e) => e.preventDefault()}>
+          <form className="card-glass p-6 space-y-4" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Your Name"
@@ -58,9 +84,10 @@ const ContactSection = () => {
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-lg gradient-bg text-primary-foreground font-medium hover:opacity-90 transition-opacity text-sm"
+              disabled={sending}
+              className="w-full py-3 rounded-lg gradient-bg text-primary-foreground font-medium hover:opacity-90 transition-opacity text-sm disabled:opacity-50"
             >
-              Send Message
+              {sending ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
