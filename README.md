@@ -29,32 +29,31 @@
   <img src="https://skillicons.dev/icons?i=python,java,cpp,js" />
 </p>
 
-### 📊 Data & ML
+---
+
+### 📊 Data & Machine Learning
 <p>
-  <img src="https://skillicons.dev/icons?i=python" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=plotly&logoColor=black"/>
 </p>
 
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Data Cleaning & EDA  
+---
 
 ### 🌐 Web Development
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,react,nodejs" />
 </p>
 
-### 🛠️ Tools
-<p>
-  <img src="https://skillicons.dev/icons?i=git,mysql" />
-</p>
-
-- Excel (Pivot Tables, VLOOKUP, Charts)  
-- Streamlit  
-
 ---
 
+### 🛠️ Tools & Technologies
+<p>
+  <img src="https://skillicons.dev/icons?i=git,mysql" />
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+</p>
 ## 🚀 Projects
 
 ### 🔹 VeriJob – Fake Job Detection Platform
