@@ -54,6 +54,8 @@
   <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
 </p>
+
+
 ## 🚀 Projects
 
 ### 🔹 VeriJob – Fake Job Detection Platform
